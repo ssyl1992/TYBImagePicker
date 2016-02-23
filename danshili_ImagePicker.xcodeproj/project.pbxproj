@@ -15,6 +15,7 @@
 		14BB335A1C71BD8000CB1408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB33581C71BD8000CB1408 /* LaunchScreen.storyboard */; };
 		14BB33651C71BD8000CB1408 /* danshili_ImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33641C71BD8000CB1408 /* danshili_ImagePickerTests.m */; };
 		14BB33701C71BD8000CB1408 /* danshili_ImagePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB336F1C71BD8000CB1408 /* danshili_ImagePickerUITests.m */; };
+		14BB33831C72C3E800CB1408 /* TYBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB33821C72C3E800CB1408 /* TYBImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		14BB336B1C71BD8000CB1408 /* danshili_ImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = danshili_ImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB336F1C71BD8000CB1408 /* danshili_ImagePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = danshili_ImagePickerUITests.m; sourceTree = "<group>"; };
 		14BB33711C71BD8000CB1408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BB33811C72C3E800CB1408 /* TYBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBImagePickerController.h; sourceTree = "<group>"; };
+		14BB33821C72C3E800CB1408 /* TYBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		14BB33491C71BD7F00CB1408 /* danshili_ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				14BB337D1C71CFE600CB1408 /* TYBImagePicker */,
 				14BB334D1C71BD8000CB1408 /* AppDelegate.h */,
 				14BB334E1C71BD8000CB1408 /* AppDelegate.m */,
 				14BB33501C71BD8000CB1408 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				14BB33711C71BD8000CB1408 /* Info.plist */,
 			);
 			path = danshili_ImagePickerUITests;
+			sourceTree = "<group>";
+		};
+		14BB337D1C71CFE600CB1408 /* TYBImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				14BB33811C72C3E800CB1408 /* TYBImagePickerController.h */,
+				14BB33821C72C3E800CB1408 /* TYBImagePickerController.m */,
+			);
+			path = TYBImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BB33521C71BD8000CB1408 /* ViewController.m in Sources */,
+				14BB33831C72C3E800CB1408 /* TYBImagePickerController.m in Sources */,
 				14BB334F1C71BD8000CB1408 /* AppDelegate.m in Sources */,
 				14BB334C1C71BD8000CB1408 /* main.m in Sources */,
 			);
@@ -418,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = danshili_ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dansltech.danshili-ImagePicker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dansltech.danshili.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = danshili_ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dansltech.danshili-ImagePicker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dansltech.danshili.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,6 +515,7 @@
 				14BB33761C71BD8000CB1408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14BB33771C71BD8000CB1408 /* Build configuration list for PBXNativeTarget "danshili_ImagePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +524,7 @@
 				14BB33791C71BD8000CB1408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14BB337A1C71BD8000CB1408 /* Build configuration list for PBXNativeTarget "danshili_ImagePickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				14BB337C1C71BD8000CB1408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
