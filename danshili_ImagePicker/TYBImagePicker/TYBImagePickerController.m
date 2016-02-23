@@ -27,7 +27,7 @@
         NSLog(@"从相册选择");
         UIImagePickerController *picker = [[UIImagePickerController alloc]init];
         picker.delegate = self;
-        
+        picker.mediaTypes = @[@"com.apple.live-photo",@"public.image"];
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
              picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
             [self.superController presentViewController:picker animated:YES completion:nil];
